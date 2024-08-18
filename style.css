@@ -119,6 +119,9 @@ nav a:hover {
   opacity: 0.75;
 }
 
+.dropdown-item {
+  color: var(--text-primary-color);
+}
 
 /* Sidebar */
 .sidebar {
@@ -237,7 +240,9 @@ body.sidebar-collapsed main {
 } */
 
 .carousel {
-  background-color: white;
+  background-color: var(--sections-color);
+  border: solid 2px var(--border-color);
+  color: var(--text-primary-color);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -262,7 +267,8 @@ body.sidebar-collapsed main {
 }
 
 .card {
-  background-color: white;
+  background-color: var(--sections-color);
+  border: solid 2px var(--border-color);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -305,8 +311,9 @@ h1 {
 }
 
 .seccion-oscura {
-  color: white;
-  background-color: #1b1b32;
+  color: var(--text-primary-color);
+  background-color: var(--sections-color);
+  border: solid 2px var(--border-color);
 }
 
 .seccion-clara {
@@ -315,6 +322,7 @@ h1 {
 }
 
 .seccion-titulo {
+  color: var(--text-primary-color);
   font-size: 2rem;
   padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
@@ -322,7 +330,7 @@ h1 {
 
 .seccion-descripcion {
   font-size: 1.2rem;
-  color: #584e4e;
+  color: var(--text-secondary-color);
 }
 
 .seccion-texto {
@@ -475,9 +483,14 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: var(--fifth-color);
   font-size: 60px;
   margin: 10px;
+}
+
+.iconos-contenedor a:hover {
+  transform: scale(1.2) translateY(5px);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Articulos */
@@ -494,12 +507,22 @@ h1 {
 }
 
 .articulos .card-header {
+  color: var(--text-primary-color);
   font-weight: bold;
+}
+
+.list-group-item {
+  background-color: var(--sections-color);
+  border: solid 1px var(--border-color);
+  color: var(--text-primary-color);
 }
 
 /* Testimonios */
 
 .testimonios {
+  background-color: var(--sections-color);
+  border: solid 2px var(--border-color);
+  color: var(--text-primary-color);
   padding: 40px 40px 80px 40px;
 }
 
@@ -548,7 +571,7 @@ h1 {
 
 .testimonio-info .cargo {
   font-size: 0.9rem;
-  color: #656060;
+  color: var(--text-secondary-color);
 }
 
 /* Contacto */
